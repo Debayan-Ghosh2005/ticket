@@ -3,78 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Railway Ticket Booking</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Birla Museum</title>
+    <link rel="stylesheet" href="styles.css"> <!-- link to the CSS file -->
 </head>
 <body>
-    <!-- Railway ticket system HTML code -->
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#book-ticket">Book Ticket</a></li>
-                <li><a href="#train-schedule">Train Schedule</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Exhibitions</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <h1>BIRLA MUSEUM</h1>
     </header>
     <main>
-        <section id="hero">
-            <h1>Book Your Railway Tickets Online</h1>
-            <p>Plan your journey with us</p>
-            <button>Book Now</button>
+        <section class="hero">
+            <!-- hero image will be displayed here -->
         </section>
-        <section id="book-ticket">
-            <h2>Book Your Ticket</h2>
-            <form>
-                <label for="from">From:</label>
-                <input type="text" id="from" name="from"><br><br>
-                <label for="to">To:</label>
-                <input type="text" id="to" name="to"><br><br>
+        <section class="exhibitions">
+            <h2>Current Exhibitions</h2>
+            <ul>
+                <li>
+                    <h3>Exhibition 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </li>
+                <li>
+                    <h3>Exhibition 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </li>
+                <li>
+                    <h3>Exhibition 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="book-tickets">
+            <h2>Book Your Tickets</h2>
+            <form id="ticket-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
                 <label for="date">Date:</label>
                 <input type="date" id="date" name="date"><br><br>
-                <label for="class">Class:</label>
-                <select id="class" name="class">
-                    <option value="first">First Class</option>
-                    <option value="second">Second Class</option>
-                    <option value="third">Third Class</option>
-                </select><br><br>
-                <input type="submit" value="Book Ticket">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time"><br><br>
+                <button type="submit">Book Now</button>
             </form>
-        </section>
-        <section id="train-schedule">
-            <h2>Train Schedule</h2>
-            <table>
-                <tr>
-                    <th>Train No.</th>
-                    <th>From</th>
-                    <th>To</th>
-                    <th>Departure Time</th>
-                    <th>Arrival Time</th>
-                </tr>
-                <tr>
-                    <td>12345</td>
-                    <td>New Delhi</td>
-                    <td>Mumbai</td>
-                    <td>08:00 AM</td>
-                    <td>08:00 PM</td>
-                </tr>
-                <tr>
-                    <td>67890</td>
-                    <td>Bangalore</td>
-                    <td>Chennai</td>
-                    <td>10:00 AM</td>
-                    <td>06:00 PM</td>
-                </tr>
-            </table>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Railway Ticket Booking</p>
+        <p>&copy; 2023 Birla Museum</p>
     </footer>
 
     <!-- Add the chatbot script -->
