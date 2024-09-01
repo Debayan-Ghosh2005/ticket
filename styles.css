@@ -1,12 +1,19 @@
-
-body {
-    font-family: Arial, sans-serif;
+/* Global Styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
 header {
-    background-color: #333;
+    background-color: #008000; /* Green */
     color: #fff;
     padding: 1em;
     text-align: center;
@@ -36,28 +43,153 @@ main {
     padding: 2em;
 }
 
-section {
-    background-color: #f7f7f7;
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #6495ED; /* Blue */
+}
+
+.exhibitions {
+    background-color: #FFD700; /* Orange */
     padding: 2em;
+    text-align: center;
+}
+
+.exhibitions ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.exhibitions li {
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
+.exhibitions h2 {
+    font-size: 24px;
     margin-bottom: 10px;
+    color: #008000; /* Green */
 }
 
-button {
-    background-color: #333;
+.exhibitions h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #6495ED; /* Blue */
+}
+
+.exhibitions p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.book-tickets {
+    background-color: #DC143C; /* Red */
+    padding: 2em;
+    text-align: center;
+}
+
+#ticket-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5DC; /* Beige */
+}
+
+#ticket-form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#ticket-form input[type="text"], #ticket-form input[type="email"], #ticket-form input[type="tel"], #ticket-form input[type="date"], #ticket-form input[type="time"], #ticket-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#ticket-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #008000; /* Green */
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
+#ticket-form button[type="submit"]:hover {
+    background-color: #6495ED; /* Blue */
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero {
+        height: 50vh;
+    }
+    
+    .exhibitions {
+        padding: 1em;
+    }
+    
+    .book-tickets {
+        padding: 1em;
+    }
+    
+    #ticket-form {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero {
+        height: 30vh;
+    }
+    
+    .exhibitions {
+        padding: 0.5em;
+    }
+    
+    .book-tickets {
+        padding: 0.5em;
+    }
+    
+    #ticket-form {
+        padding: 5px;
+    }
+}
