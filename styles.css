@@ -53,7 +53,7 @@ main {
 }
 
 .hero {
-    background-image: url('hero.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9AHhBnEjy3wh-ufNhdSYvH0F0suXYyb6oQ&s');
     background-size: cover;
     background-position: center;
     height: 60vh;
